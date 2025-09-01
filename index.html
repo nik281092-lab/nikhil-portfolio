@@ -74,7 +74,7 @@ section.visible { opacity: 1; transform: translateY(0); }
   justify-content: center;
   background: url('Background.png') center/cover no-repeat;
   border-radius: 15px;
-  padding: 160px 20px 80px; /* ⬅️ moved everything down */
+  padding: 200px 20px 80px; /* ⬅️ moved everything further down */
   min-height: 100vh;
 }
 .about-content {
@@ -92,6 +92,17 @@ section.visible { opacity: 1; transform: translateY(0); }
   margin-bottom: 20px;
   box-shadow: 0 0 25px #ff6600;
   animation: glow 3s infinite alternate;
+}
+#about h1 {
+  font-size: 2em;
+  margin-top: 60px;   /* ⬅️ pushed name down by 60px */
+  margin-bottom: 20px;
+  color: #ff9933;
+}
+#about p {
+  max-width: 700px;
+  font-size: 1.05em;
+  margin-top: 50px;   /* ⬅️ pushed about text down by 50px */
 }
 @keyframes glow {
   from { box-shadow: 0 0 20px #ff6600; }
@@ -116,8 +127,6 @@ section.visible { opacity: 1; transform: translateY(0); }
   transform: scale(1.08);
   box-shadow: 0 0 25px #ff6600;
 }
-#about h1 { font-size: 2em; margin-bottom: 10px; color: #ff9933; }
-#about p { max-width: 700px; font-size: 1.05em; }
 
 /* Skills */
 #skills .skill-bar { margin: 20px 0; }
