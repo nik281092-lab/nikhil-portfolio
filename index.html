@@ -37,7 +37,7 @@ nav a {
 }
 nav a:hover { color: #fff; text-shadow: 0 0 10px #ff6600; }
 
-/* Section */
+/* Section default */
 section { 
   padding: 100px 10% 80px; 
   min-height: 100vh; 
@@ -76,11 +76,9 @@ section.visible { opacity: 1; transform: translateY(0); }
   text-align: center;
   background: url('Background.png') center/cover no-repeat;
   border-radius: 15px;
-  padding: 200px 20px 80px;
+  padding-top: 270px;   /* ✅ pushes everything 20px lower than before */
+  padding-bottom: 100px;
   min-height: 100vh;
-}
-.about-content {
-  margin-top: 20px; /* ✅ pushes profile picture + name + text down by 20px */
 }
 .profile-pic {
   width: 350px;
@@ -91,7 +89,6 @@ section.visible { opacity: 1; transform: translateY(0); }
   margin-bottom: 20px;
   box-shadow: 0 0 25px #ff6600;
   animation: glow 3s infinite alternate;
-  position: relative;
 }
 @keyframes glow {
   from { box-shadow: 0 0 20px #ff6600; }
@@ -242,15 +239,30 @@ section.visible { opacity: 1; transform: translateY(0); }
 <!-- About -->
 <section id="about">
   <h2 class="section-title">About Me</h2>
-  <div class="about-content">
-    <img src="photo2.jpg" alt="Profile" class="profile-pic">
-    <h1>Nikhil Kulkarni</h1>
-    <p>Oracle SCM Planning Consultant specializing in Demand Management with 7+ years of diverse experience across consulting, operations, and engineering. Skilled in Oracle Fusion Planning Cloud, OTBI reporting, advanced Excel, and AI-driven analytics. Hold an MBA in Operations Management and a B.E. in Production Engineering. Enthusiastic AI learner passionate about technology-driven supply chain innovation.</p>
-    <a href="Nikhil_Kulkarni_Resume.pdf" class="resume-btn" download>⬇ Download Resume</a>
+  <img src="photo2.jpg" alt="Profile" class="profile-pic">
+  <h1>Nikhil Kulkarni</h1>
+  <p>Oracle SCM Planning Consultant specializing in Demand Management with 7+ years of diverse experience across consulting, operations, and engineering. Skilled in Oracle Fusion Planning Cloud, OTBI reporting, advanced Excel, and AI-driven analytics. Hold an MBA in Operations Management and a B.E. in Production Engineering. Enthusiastic AI learner passionate about technology-driven supply chain innovation.</p>
+  <a href="Nikhil_Kulkarni_Resume.pdf" class="resume-btn" download>⬇ Download Resume</a>
+</section>
+
+<!-- Example extra section (Skills, rest continue as before) -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-bar">
+    <div class="label">Oracle Fusion Planning Cloud</div>
+    <div class="bar"><div style="--level:90%"></div></div>
+  </div>
+  <div class="skill-bar">
+    <div class="label">Oracle EBS Procurement & Inventory</div>
+    <div class="bar"><div style="--level:85%"></div></div>
+  </div>
+  <div class="skill-bar">
+    <div class="label">Advanced Excel & AI Tools</div>
+    <div class="bar"><div style="--level:80%"></div></div>
   </div>
 </section>
 
-<!-- Other sections (Skills, Projects, etc.) remain unchanged -->
+<!-- Other sections (Projects, Experience, Certifications, Education, Contacts) same as before -->
 
 <!-- Scripts -->
 <script>
