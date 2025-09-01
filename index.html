@@ -76,9 +76,11 @@ section.visible { opacity: 1; transform: translateY(0); }
   text-align: center;
   background: url('Background.png') center/cover no-repeat;
   border-radius: 15px;
-  padding-top: 270px;   /* ✅ pushes everything 20px lower than before */
-  padding-bottom: 100px;
+  padding: 80px 20px;
   min-height: 100vh;
+}
+.about-content {
+  margin-top: 120px;   /* ✅ controls how far profile pic + text sit from top */
 }
 .profile-pic {
   width: 350px;
@@ -238,14 +240,16 @@ section.visible { opacity: 1; transform: translateY(0); }
 
 <!-- About -->
 <section id="about">
-  <h2 class="section-title">About Me</h2>
-  <img src="photo2.jpg" alt="Profile" class="profile-pic">
-  <h1>Nikhil Kulkarni</h1>
-  <p>Oracle SCM Planning Consultant specializing in Demand Management with 7+ years of diverse experience across consulting, operations, and engineering. Skilled in Oracle Fusion Planning Cloud, OTBI reporting, advanced Excel, and AI-driven analytics. Hold an MBA in Operations Management and a B.E. in Production Engineering. Enthusiastic AI learner passionate about technology-driven supply chain innovation.</p>
-  <a href="Nikhil_Kulkarni_Resume.pdf" class="resume-btn" download>⬇ Download Resume</a>
+  <div class="about-content">
+    <h2 class="section-title">About Me</h2>
+    <img src="photo2.jpg" alt="Profile" class="profile-pic">
+    <h1>Nikhil Kulkarni</h1>
+    <p>Oracle SCM Planning Consultant specializing in Demand Management with 7+ years of diverse experience across consulting, operations, and engineering. Skilled in Oracle Fusion Planning Cloud, OTBI reporting, advanced Excel, and AI-driven analytics. Hold an MBA in Operations Management and a B.E. in Production Engineering. Enthusiastic AI learner passionate about technology-driven supply chain innovation.</p>
+    <a href="Nikhil_Kulkarni_Resume.pdf" class="resume-btn" download>⬇ Download Resume</a>
+  </div>
 </section>
 
-<!-- Example extra section (Skills, rest continue as before) -->
+<!-- Skills -->
 <section id="skills">
   <h2 class="section-title">Skills</h2>
   <div class="skill-bar">
@@ -262,7 +266,7 @@ section.visible { opacity: 1; transform: translateY(0); }
   </div>
 </section>
 
-<!-- Other sections (Projects, Experience, Certifications, Education, Contacts) same as before -->
+<!-- Other sections (Projects, Experience, Certifications, Education, Hobbies, Contacts) stay the same -->
 
 <!-- Scripts -->
 <script>
